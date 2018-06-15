@@ -12,38 +12,33 @@ run_test
 NAME='rahash2 -a md5'
 CMDS='!rahash2 -a md5 ../../bins/elf/analysis/hello-linux-x86_64'
 BROKEN=
-EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 md5: c957bd5bd6204470256bc15248ccafd4
-'
+EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 md5: c957bd5bd6204470256bc15248ccafd4'
 
 run_test
 
 NAME='rahash2 -a sha1'
 CMDS='!rahash2 -a sha1 ../../bins/elf/analysis/hello-linux-x86_64'
 BROKEN=
-EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 sha1: 687c82d13cb27f0600d8e57edc784282c1732f56
-'
+EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 sha1: 687c82d13cb27f0600d8e57edc784282c1732f56'
 
 run_test
 
 NAME='rahash2 -a sha256'
 CMDS='!rahash2 -a sha256 ../../bins/elf/analysis/hello-linux-x86_64'
 BROKEN=
-EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 sha256: 7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55
-'
+EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 sha256: 7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55'
 
 run_test
 
 NAME='rahash2 -a sha384'
 CMDS='!rahash2 -a sha384 ../../bins/elf/analysis/hello-linux-x86_64'
-EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 sha384: a6fed224b0b5892ab44839b5ae6a12e54fb3393b5f1e1ca174fb5a0032c994f1c492c5b3a090518d8a60875223977ba4
-'
+EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 sha384: a6fed224b0b5892ab44839b5ae6a12e54fb3393b5f1e1ca174fb5a0032c994f1c492c5b3a090518d8a60875223977ba4'
 
 run_test
 
 NAME='rahash2 -a sha512'
 CMDS='!rahash2 -a sha512 ../../bins/elf/analysis/hello-linux-x86_64'
-EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 sha512: 2640b1ff96870fb78a3d8ae6b51595ca86c37e25443b2e8c5441e77d11cdb3830ece8d791561c22788d37d7f22c99cdabf8f798826c0ff441901e6157890fee6
-'
+EXPECT='../../bins/elf/analysis/hello-linux-x86_64: 0x00000000-0x00001a35 sha512: 2640b1ff96870fb78a3d8ae6b51595ca86c37e25443b2e8c5441e77d11cdb3830ece8d791561c22788d37d7f22c99cdabf8f798826c0ff441901e6157890fee6'
 
 run_test
 
@@ -52,8 +47,7 @@ CMDS='!rahash2 -a md5,sha1,sha256 -r ../../bins/elf/analysis/hello-linux-x86_64'
 BROKEN=
 EXPECT='../../bins/elf/analysis/hello-linux-x86_64: e file.md5=c957bd5bd6204470256bc15248ccafd4
 ../../bins/elf/analysis/hello-linux-x86_64: e file.sha1=687c82d13cb27f0600d8e57edc784282c1732f56
-../../bins/elf/analysis/hello-linux-x86_64: e file.sha256=7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55
-'
+../../bins/elf/analysis/hello-linux-x86_64: e file.sha256=7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55'
 
 run_test
 
@@ -62,8 +56,7 @@ CMDS='!rahash2 -b10 -a md5,sha1,sha256 -r ../../bins/elf/analysis/hello-linux-x8
 BROKEN=
 EXPECT='../../bins/elf/analysis/hello-linux-x86_64: e file.md5=c957bd5bd6204470256bc15248ccafd4
 ../../bins/elf/analysis/hello-linux-x86_64: e file.sha1=687c82d13cb27f0600d8e57edc784282c1732f56
-../../bins/elf/analysis/hello-linux-x86_64: e file.sha256=7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55
-'
+../../bins/elf/analysis/hello-linux-x86_64: e file.sha256=7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55'
 
 run_test
 
@@ -79,16 +72,14 @@ run_test
 NAME='rahash2 -a md5 -s "admin"'
 CMDS='!rahash2 -a md5 -s "admin"'
 BROKEN=
-EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
 NAME='rahash2 -a md5 -e -s "admin"'
 CMDS='!rahash2 -a md5 -e -s "admin"'
 BROKEN=
-EXPECT='0x00000000-0x00000004 md5: c31f804a0e4a8943a7a5577a292f2321
-'
+EXPECT='0x00000000-0x00000004 md5: c31f804a0e4a8943a7a5577a292f2321'
 
 run_test
 
@@ -97,8 +88,7 @@ NAME='rahash2 -a sha1,sha256 -s "admin"'
 CMDS='!rahash2 -a sha1,sha256 -s "admin"'
 BROKEN=
 EXPECT='0x00000000-0x00000004 sha1: d033e22ae348aeb5660fc2140aec35850c4da997
-0x00000000-0x00000004 sha256: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
-'
+0x00000000-0x00000004 sha256: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918'
 
 run_test
 
@@ -127,31 +117,27 @@ run_test
 NAME='rahash2 -a md5 -x "61646d696e"'
 CMDS='!rahash2 -a md5 -x "61646d696e"'
 BROKEN=
-EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
 NAME='rahash2 -a md5 -x "61646d696e" -s "admin"'
 CMDS='!rahash2 -a md5 -x "61646d696e" -s "admin"'
 BROKEN=
-EXPECT_ERR='Hashstring already defined
-'
+EXPECT_ERR='Hashstring already defined'
 run_test
 
 NAME='rahash2 -a luhn -s "5105105105105100"'
 CMDS='!rahash2 -a luhn -s "5105105105105100"'
 BROKEN=
-EXPECT='0x00000000-0x0000000f luhn: 00
-'
+EXPECT='0x00000000-0x0000000f luhn: 00'
 
 run_test
 
 NAME='rahash2 -a luhn -s "4408041234567890"'
 CMDS='!rahash2 -a luhn -s "4408041234567890"'
 BROKEN=
-EXPECT='0x00000000-0x0000000f luhn: 07
-'
+EXPECT='0x00000000-0x0000000f luhn: 07'
 run_test
 
 NAME='rahash2 -L'
@@ -218,16 +204,14 @@ run_test
 NAME='rahash2 -a md5 -t0x4 -x "61646d696eaa"'
 CMDS='!rahash2 -a md5 -t0x4 -x "61646d696eaa"'
 BROKEN=
-EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
 NAME='rahash2 -q -a md5 -t0x4 -x "61646d696eaa"'
 CMDS='!rahash2 -q -a md5 -t0x4 -x "61646d696eaa"'
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
@@ -235,8 +219,7 @@ run_test
 NAME='rahash2 -q -a md5 -f0x1 -x "aa61646d696e"'
 CMDS='!rahash2 -q -a md5 -f0x1 -x "aa61646d696e"'
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
@@ -244,32 +227,28 @@ run_test
 NAME='rahash2 -q -a md5 -i1 -x "61646d696e"'
 CMDS='!rahash2 -q -a md5 -i1 -x "61646d696e"'
 BROKEN=
-EXPECT='43442676c74ae59f219c2d87fd6bad52
-'
+EXPECT='43442676c74ae59f219c2d87fd6bad52'
 
 run_test
 
 NAME='rahash2 -q -a md5 -i2 -x "61646d696e"'
 CMDS='!rahash2 -q -a md5 -i2 -x "61646d696e"'
 BROKEN=
-EXPECT='9fec80fbcee7632ce78d1586332b299e
-'
+EXPECT='9fec80fbcee7632ce78d1586332b299e'
 
 run_test
 
 NAME='rahash2 -a md5 -t0x4 -s "admina"'
 CMDS='!rahash2 -a md5 -t0x4 -s "admina"'
 BROKEN=
-EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
 NAME='rahash2 -q -a md5 -t0x4 -s "admina"'
 CMDS='!rahash2 -q -a md5 -t0x4 -s "admina"'
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
@@ -277,8 +256,7 @@ run_test
 NAME='rahash2 -q -a md5 -f0x1 -s "aadmin"'
 CMDS='!rahash2 -q -a md5 -f0x1 -s "aadmin"'
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
@@ -286,16 +264,14 @@ run_test
 NAME='rahash2 -q -a md5 -i1 -s "admin"'
 CMDS='!rahash2 -q -a md5 -i1 -s "admin"'
 BROKEN=
-EXPECT='43442676c74ae59f219c2d87fd6bad52
-'
+EXPECT='43442676c74ae59f219c2d87fd6bad52'
 
 run_test
 
 NAME='rahash2 -q -a md5 -i2 -s "admin"'
 CMDS='!rahash2 -q -a md5 -i2 -s "admin"'
 BROKEN=
-EXPECT='9fec80fbcee7632ce78d1586332b299e
-'
+EXPECT='9fec80fbcee7632ce78d1586332b299e'
 
 run_test
 
@@ -303,8 +279,7 @@ run_test
 NAME='rahash2 -q -a md5 -f0x1 -t0x5 -s "aadmina"'
 CMDS='!rahash2 -q -a md5 -f0x1 -t0x5 -s "aadmina"'
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
@@ -312,47 +287,41 @@ run_test
 NAME='rahash2 -q -a md5 -f0x1 -t0x5 -x "aa61646d696eaa"'
 CMDS='!rahash2 -q -a md5 -f0x1 -t0x5 -x "aa61646d696eaa"'
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
 NAME='printf "admin" | rahash2 -q -a md5 -s -'
 CMDS='!printf "admin" | rahash2 -q -a md5 -s -'
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
 NAME='printf "aadmina" | rahash2 -f0x1 -t0x5 -q -a md5 -s -'
 CMDS='!printf "aadmina" | rahash2 -f0x1 -t0x5 -q -a md5 -s -'
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 
 run_test
 
 NAME='printf "aa61646d696eaa" | rahash2 -f0x1 -t0x5 -q -a md5 -x -'
 CMDS='!printf "aa61646d696eaa" | rahash2 -f0x1 -t0x5 -q -a md5 -x -'
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 run_test
 
 NAME='rahash2 -f0x1 -t0x5 -q -a md5 admin.txt'
 CMDS='!rahash2 -f0x1 -t0x5 -q -a md5 ../../bins/other/admin.txt'
 FILE=../../bins/other/admin.txt
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3 ../../bins/other/admin.txt
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3 ../../bins/other/admin.txt'
 run_test
 
 NAME='rahash2 -f0x1 -t0x5 -qq -a md5 admin.txt'
 CMDS='!rahash2 -f0x1 -t0x5 -qq -a md5 ../../bins/other/admin.txt'
 FILE=../../bins/other/admin.txt
 BROKEN=
-EXPECT='21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='21232f297a57a5a743894a0e4a801fc3'
 run_test
 
 
@@ -365,27 +334,23 @@ run_test
 
 NAME='rahash2 -s hello1'
 CMDS='!rahash2 -qa md5 -s hello1'
-EXPECT='203ad5ffa1d7c650ad681fdff3965cd2
-'
+EXPECT='203ad5ffa1d7c650ad681fdff3965cd2'
 run_test
 
 NAME='rahash2 -s hello\x31'
 CMDS='!rahash2 -qa md5 -s hello\\x31'
-EXPECT='203ad5ffa1d7c650ad681fdff3965cd2
-'
+EXPECT='203ad5ffa1d7c650ad681fdff3965cd2'
 run_test
 
 NAME='rahash2 zero length hashes md5'
 CMDS='!rahash2 -a md5 -s ""'
-EXPECT='0x00000000-0x00000000 md5: d41d8cd98f00b204e9800998ecf8427e
-'
+EXPECT='0x00000000-0x00000000 md5: d41d8cd98f00b204e9800998ecf8427e'
 
 run_test
 
 NAME='rahash2 zero length hashes sha1'
 CMDS='!rahash2 -a sha1 -s ""'
-EXPECT='0x00000000-0x00000000 sha1: da39a3ee5e6b4b0d3255bfef95601890afd80709
-'
+EXPECT='0x00000000-0x00000000 sha1: da39a3ee5e6b4b0d3255bfef95601890afd80709'
 
 run_test
 
@@ -401,10 +366,10 @@ run_test
 NAME='rahash2 -c with incorrect expected hash'
 CMDS='!rahash2 -a md5 -s "admin" -c 21232f297a57a5a743894a0e4a801fc4'
 BROKEN=
-EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3
-'
+EXPECT='0x00000000-0x00000004 md5: 21232f297a57a5a743894a0e4a801fc3'
 IGNORE_ERR=0
-EXPECT_ERR="rahash2: Computed hash doesn't match the expected one.
+EXPECT_ERR="
+rahash2: Computed hash doesn't match the expected one.
 "
 
 run_test
@@ -502,8 +467,7 @@ run_test
 NAME='rahash2 of "abc" using sha256'
 CMDS='!rahash2 -a sha256 -s "abc"'
 BROKEN=
-EXPECT='0x00000000-0x00000002 sha256: ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
-'
+EXPECT='0x00000000-0x00000002 sha256: ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad'
 
 run_test
 
@@ -511,8 +475,7 @@ run_test
 NAME='rahash2 of "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq" using sha256'
 CMDS='!rahash2 -a sha256 -s "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq"'
 BROKEN=
-EXPECT='0x00000000-0x00000037 sha256: 248d6a61d20638b8e5c026930c3e6039a33ce45964ff2167f6ecedd419db06c1
-'
+EXPECT='0x00000000-0x00000037 sha256: 248d6a61d20638b8e5c026930c3e6039a33ce45964ff2167f6ecedd419db06c1'
 
 run_test
 
@@ -520,8 +483,7 @@ run_test
 NAME='rahash2 of "abc" using sha512'
 CMDS='!rahash2 -a sha512 -s "abc"'
 BROKEN=
-EXPECT='0x00000000-0x00000002 sha512: ddaf35a193617abacc417349ae20413112e6fa4e89a97ea20a9eeee64b55d39a2192992a274fc1a836ba3c23a3feebbd454d4423643ce80e2a9ac94fa54ca49f
-'
+EXPECT='0x00000000-0x00000002 sha512: ddaf35a193617abacc417349ae20413112e6fa4e89a97ea20a9eeee64b55d39a2192992a274fc1a836ba3c23a3feebbd454d4423643ce80e2a9ac94fa54ca49f'
 
 run_test
 
@@ -529,8 +491,7 @@ run_test
 NAME='rahash2 of "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu" using sha512'
 CMDS='!rahash2 -a sha512 -s "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu"'
 BROKEN=
-EXPECT='0x00000000-0x0000006f sha512: 8e959b75dae313da8cf4f72814fc143f8f7779c6eb9f7fa17299aeadb6889018501d289e4900f7e4331b99dec4b5433ac7d329eeb6dd26545e96e55b874be909
-'
+EXPECT='0x00000000-0x0000006f sha512: 8e959b75dae313da8cf4f72814fc143f8f7779c6eb9f7fa17299aeadb6889018501d289e4900f7e4331b99dec4b5433ac7d329eeb6dd26545e96e55b874be909'
 
 run_test
 
@@ -538,8 +499,7 @@ run_test
 NAME='rahash2 of "abc" using sha384'
 CMDS='!rahash2 -a sha384 -s "abc"'
 BROKEN=
-EXPECT='0x00000000-0x00000002 sha384: cb00753f45a35e8bb5a03d699ac65007272c32ab0eded1631a8b605a43ff5bed8086072ba1e7cc2358baeca134c825a7
-'
+EXPECT='0x00000000-0x00000002 sha384: cb00753f45a35e8bb5a03d699ac65007272c32ab0eded1631a8b605a43ff5bed8086072ba1e7cc2358baeca134c825a7'
 
 run_test
 
@@ -547,32 +507,28 @@ run_test
 NAME='rahash2 of "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu" using sha384'
 CMDS='!rahash2 -a sha384 -s "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmnhijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu"'
 BROKEN=
-EXPECT='0x00000000-0x0000006f sha384: 09330c33f71147e83d192fc782cd1b4753111b173b3b05d22fa08086e3b0f712fcc7c71a557e2db966c3e9fa91746039
-'
+EXPECT='0x00000000-0x0000006f sha384: 09330c33f71147e83d192fc782cd1b4753111b173b3b05d22fa08086e3b0f712fcc7c71a557e2db966c3e9fa91746039'
 
 run_test
 
 NAME='rahash2 of empty string using sha256'
 CMDS='!rahash2 -a sha256 -s ""'
 BROKEN=
-EXPECT='0x00000000-0x00000000 sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-'
+EXPECT='0x00000000-0x00000000 sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
 
 run_test
 
 NAME='rahash2 of empty string using sha384'
 CMDS='!rahash2 -a sha384 -s ""'
 BROKEN=
-EXPECT='0x00000000-0x00000000 sha384: 38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b
-'
+EXPECT='0x00000000-0x00000000 sha384: 38b060a751ac96384cd9327eb1b1e36a21fdb71114be07434c0cc7bf63f6e1da274edebfe76f65fbd51ad2f14898b95b'
 
 run_test
 
 NAME='rahash2 of empty string using sha512'
 CMDS='!rahash2 -a sha512 -s ""'
 BROKEN=
-EXPECT='0x00000000-0x00000000 sha512: cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e
-'
+EXPECT='0x00000000-0x00000000 sha512: cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e'
 
 run_test
 
