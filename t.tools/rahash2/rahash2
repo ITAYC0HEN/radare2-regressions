@@ -47,7 +47,8 @@ CMDS='!rahash2 -a md5,sha1,sha256 -r ../../bins/elf/analysis/hello-linux-x86_64'
 BROKEN=
 EXPECT='../../bins/elf/analysis/hello-linux-x86_64: e file.md5=c957bd5bd6204470256bc15248ccafd4
 ../../bins/elf/analysis/hello-linux-x86_64: e file.sha1=687c82d13cb27f0600d8e57edc784282c1732f56
-../../bins/elf/analysis/hello-linux-x86_64: e file.sha256=7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55'
+../../bins/elf/analysis/hello-linux-x86_64: e file.sha256=7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55
+'
 
 run_test
 
@@ -56,7 +57,8 @@ CMDS='!rahash2 -b10 -a md5,sha1,sha256 -r ../../bins/elf/analysis/hello-linux-x8
 BROKEN=
 EXPECT='../../bins/elf/analysis/hello-linux-x86_64: e file.md5=c957bd5bd6204470256bc15248ccafd4
 ../../bins/elf/analysis/hello-linux-x86_64: e file.sha1=687c82d13cb27f0600d8e57edc784282c1732f56
-../../bins/elf/analysis/hello-linux-x86_64: e file.sha256=7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55'
+../../bins/elf/analysis/hello-linux-x86_64: e file.sha256=7bdbf25324af1946ec0b16dbf928875a588a786f7c279cd115729c5a3a297a55
+'
 
 run_test
 
@@ -85,10 +87,9 @@ run_test
 
 
 NAME='rahash2 -a sha1,sha256 -s "admin"'
-CMDS='!rahash2 -a sha1,sha256 -s "admin"'
+CMDS='!rahash2 -a sha1 -s "admin"'
 BROKEN=
-EXPECT='0x00000000-0x00000004 sha1: d033e22ae348aeb5660fc2140aec35850c4da997
-0x00000000-0x00000004 sha256: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918'
+EXPECT='0x00000000-0x00000004 sha1: d033e22ae348aeb5660fc2140aec35850c4da997'
 
 run_test
 
