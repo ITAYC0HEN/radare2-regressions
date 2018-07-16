@@ -6,7 +6,7 @@ RUN
 NAME=ph crc32
 FILE=-
 EXPECT64=MzljMQozOWMxCjBkNGExMTg1CjBkNGExMTg1Cgo=
-CMDS64='YiAxMgp3IGhlbGxvIHdvcmxkCiFyYWhhc2gyIC1xbGEgY3JjMTYgLXMgJ2hlbGxvIHdvcmxkJwpw\naCBjcmMxNiAxMQohcmFoYXNoMiAtcWxhIGNyYzMyIC1zICdoZWxsbyB3b3JsZCcKcGggY3JjMzIg\nMTEKCg=
+CMDS64=YiAxMgp3IGhlbGxvIHdvcmxkCiFyYWhhc2gyIC1xbGEgY3JjMTYgLXMgJ2hlbGxvIHdvcmxkJwpw\naCBjcmMxNiAxMQohcmFoYXNoMiAtcWxhIGNyYzMyIC1zICdoZWxsbyB3b3JsZCcKcGggY3JjMzIg\nMTEKCg=
 RUN
 NAME=crca 'hello world'
 FILE=-
