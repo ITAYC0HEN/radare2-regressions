@@ -787,7 +787,7 @@ RUN
 NAME=ahe
 FILE=malloc://512
 EXPECT=<<EOF
-15
+16
 esil: test
 EOF
 CMDS=<<EOF
